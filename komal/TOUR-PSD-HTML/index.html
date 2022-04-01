@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+      <link rel="stylesheet" href="sass/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/tools-favicon.jpg" type="images/jpg">
+        <title>Tour PSD TO HTML Conversion </title>
+
+       
+    </head>
+  
+    <style>
+   
+ nav{
+  background: rgb(255, 255, 255);
+  height: 80px;
+  width: 100%;
+  box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 20%); 
+
+}
+.logo{
+  line-height: 80px;
+  width:125%;
+}
+
+@media(max-width:800px){
+  .logo{
+  line-height: 80px;
+  width:54%;
+}
+
+}
+nav #left_menu{
+  float: right;
+  margin-right:21%;
+  margin-top:-6%;
+  font-family:'FontAwesome';
+   font-weight: 600;
+
+}
+nav #left_menu li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav #left_menu li a{
+  color: #808080;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration:none;
+ 
+}
+
+.checkbtn{
+  font-size: 30px;
+  color:#808080;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width:576px){
+  .logo{
+    padding-left: 50px;
+    width:100%;
+  }
+  nav #left_menu li a{
+    font-size: 16px;
+    text-decoration:none;
+  }
+}
+
+@media only screen and (max-width: 556px){
+  #search_baar{
+    border-radius: 65px;
+    border: 2px solid #f44154;
+    padding: 20px;
+    height: 19px;
+    background-color: #f44154;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    margin-left:171%;
+    margin-top:-7%;
+    display:none;
+
+
+
+  }
+}
+@media only screen and(max-width:556px){
+  #search_baar-button{
+    display:none;
+
+  }
+}
+@media(max-width:450px){
+  #search_baar {
+  border-radius: 65px;
+  border:3px solid #808080;
+  padding: 20px;
+  height: 45px;
+  width:250px;
+  margin-left:164%;
+  margin-top:-27%; 
+  display:none;
+} 
+
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  #left_menu{
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background: #fff;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .6s;
+  }
+  nav #left_menu li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav #left_menu li a{
+    font-size: 20px;
+    text-decoration:none;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #808080;
+  }
+  #check:checked~  ul{
+    left: 0;
+  }
+}
+
+ #search_baar {
+  border-radius: 65px;
+  border:3px solid #808080;
+  padding: 20px;
+  height: 45px;
+  width:250px;
+  margin-left:164%;
+  margin-top:-27%; 
+} 
+
+#search_baar-button{
+    border-radius: 65px;
+    border: 2px solid #f44154;
+    padding: 20px;
+    height: 19px;
+    background-color: #f44154;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    margin-left:449%;
+    margin-top:-24%;
+}
+
+
+
+#search_baar-button p{
+  font-weight: 500;
+  margin-top:-13px;
+}
+
+
+#search_baar-button:hover {
+  background-color:#1aa3e8;
+}
+
+
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+  background: #F7F7F7;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 80px; 
+  padding-bottom: 100px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  /* opacity: 0.7;  */
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgb(0 0 0 / 20%);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 5px 5px rgb(0 0 0 / 22%);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #00acc1;
+}
+
+        </style>
+          
+          <body>
+      
+          
+           
+            <nav>
+              <input type="checkbox" id="check">
+        
+        
+              <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                
+              </label>
+         
+             
+        
+             
+              <div class="col-md-2 m-0 p-0">
+                <div class="row">
+                  <a href="index.html">
+                    <div class="logo"><img src="images/logo.png" class="w-100" class="img-fluid"></div></a>
+                </div>
+              </div>
+             
+            
+            <div class="col-md-2 p-0 m-0">
+                <div class="row p-0 m-0">
+                   <form id="search_baar">
+                        <p class="" style="margin-left:-1%; margin-top:-7%;"> I am looking for a ...</p>
+                        <i class="fa fa-search text-danger" aria-hidden="true" style=" float: right; margin-top:-19%;"></i>
+                       </form>
+                </div>
+            </div> 
+         
+        
+              <ul id="left_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Listing</a></li>
+                 <li><a href="#">Pages</a></li>
+                 <li><a href="#">Blog</a></li>
+                 <li><a href="#">Contact</a></li>
+             </ul> 
+            </nav>
+            <div class="col-md-3">
+              <div class="row">
+                <border id="rcorners2" style="width:170px;">
+                        
+                  <p class="text-light text-center" style="margin-top:-13px; font-size: revert;">+ ADD A PLACE</p>
+             
+                 </border>
+              </div>
+            </div>
+      
+         
+    <!-- start navigation bar
+ <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-md-12">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light menubar">
+                        <div class="container-fluid">
+                          <div class="col-md-3">
+                          <a class="navbar-brand" href="index.html">
+                              <img src="images/logo.png" class="w-100" height="" class="img-fluid">
+                          </a>
+                          </div>
+                   
+                          <border id="rcorners">
+                           <p class="" style="margin-left:-1%; margin-top:-7%;"> I am looking for a ...</p>
+                           <i class="fa fa-search text-danger" aria-hidden="true" style=" float: right; margin-top:-16%;"></i>
+                          </border>
+                        
+                    
+                          <input class="navbar-toggler navbar-toggler-icon" type="text" id="button1" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          </input>
+                     
+                          <div class="col-col-lg-6 collapse navbar-collapse" style="width:350px;">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 sidenav"  id="mySidenav"></ul>
+                              <div class="dropdown">
+                                <a href ="#" class="btn dropdown-toggle text-danger " id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Home
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1 text-danger" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Listing  
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Pages  
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                             
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Blog 
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Contact 
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+
+                          
+                              </div>
+                            
+                              <border id="rcorners2" style="width:170px;">
+                        
+                                <p class="text-light text-center" style="margin-top:-13px; font-size: revert;">+ ADD A PLACE</p>
+                            
+                               </border>
+                             
+                             
+                            </ul>
+                     
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+    <!--end  navigation bar-->
+  
+    <!--start slide-->
+    <div class="container-fluid slide ">
+      <div class="row">
+        <span class="head-top">
+        <h1 class="mx-auto">Kushinagar</h1>
+        <p class="mx-auto text-light">Kasia, kushinaarpadufw ujooada juada o0addjkd</p>
+        <div class="container text-center">
+          <div class="row text-center">
+            <ul class="text-center socialicons">
+              <i class="fa fa-address-book-o text-primary fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-address-book-o text-danger fa-2x" aria-hidden="true"></i>
+			 
+              <i class="fa fa-address-book-o text-primary fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-address-book-o text-danger fa-2x" aria-hidden="true"></i>                         
+    
+            </ul>  
+          </div>
+        </div>
+       
+      </span>
+      </div>
+    </div>
+    <!--end slide-->
+      <!--start tour_place-->
+      <div class="container-fluid p-0">
+        <div class="row m-0 p-0">
+          <div class="col-md-12 p-0 m-0">
+            <div class="row m-0 p-0">
+              <div class="col-md-7 m-0 p-0">
+               
+                <div class="row p-0 m-0"> 
+                  <div class="tour_bg py-4">
+                    <P class=""> Showing results For <strong>”Bangkok Listings”</P></strong> 
+                    <div class="d-flex">
+                    
+                     
+                       <div class="col-md-7 p-0 m-0 showing_button">
+                         <div class="row">
+                           <ul class="showing_button">
+                              <button class="btn btn-outline-secondary" style="border-radius: 65px">Open Now</button>&nbsp;&nbsp;
+                              <button class="btn btn-outline-secondary" style="border-radius: 65px">Best Match</button>&nbsp;&nbsp;
+                               <button class="btn btn-outline-secondary border_sof" style="border-radius: 65px">Newest First</button>
+                          
+                          
+                        </ul>
+                         </div>
+                       </div>
+                      
+
+                        <div class="col-md-3 ms-auto">
+                          <div class="row">
+                            <div class="border_sof1">
+                              <button class="btn btn-outline-secondary px-4" style="border-radius: 65px">City: <strong>Bankok</strong></button>
+      
+                             </div>
+                          </div>
+                        </div>
+                     
+                    </div>
+
+                  </div> 
+          
+ 
+
+
+                            
+             <!-- Topic Cards -->
+    <div id="cards_landscape_wrap-2">
+   
+      <div class="row">
+          <div class="col-md-6">
+              <a href="">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="image-box">
+                              <img src="images/tour-img1.jpg" alt="" / class="img-fluid">
+                          </div>
+                         
+                         <div class="text-container">
+                          <h5 class="card-title">NEXT2 Pub</h5>
+                          <p class="card-text">Main Features Fee parking...</p>
+                          <ul class="list-group list-group-flush">
+                        
+          
+                            <li class="list-group-item">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                              77/1 Ratchadamnoem Avenue</li>
+             
+                            <li class="list-group-item">
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+             
+                              +1(009)433 165</li>
+                              
+                            <li class="list-group-item">
+                              <i class="fa fa-star-o" aria-hidden="true"><br></i>
+             
+                         
+                            Rating 5.0 </li>
+                            <li class="list-group-item">
+                          </li></ul>
+                            
+                          </div> 
+                      </div>
+                  </div>
+              </a>
+          </div>
+        
+     
+          <div class="col-md-6 m-0">
+            <a href="">
+                <div class="card-flyer">
+                    <div class="text-box">
+                        <div class="image-box">
+                            <img src="images/tour-img2.jpg" alt="" / class="img-fluid">
+                        </div>
+                       
+                       <div class="text-container">
+                        <h5 class="card-title">NEXT2 Pub</h5>
+                        <p class="card-text">Main Features Fee parking...</p>
+                        <ul class="list-group list-group-flush">
+                      
+        
+                          <li class="list-group-item">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                            77/1 Ratchadamnoem Avenue</li>
+           
+                          <li class="list-group-item">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+           
+                            +1(009)433 165</li>
+                            
+                          <li class="list-group-item">
+                            <i class="fa fa-star-o" aria-hidden="true"><br></i>
+           
+                       
+                          Rating 5.0 </li>
+                          <li class="list-group-item">
+                        </li></ul>
+                          
+                        </div> 
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6">
+          <a href="">
+              <div class="card-flyer">
+                  <div class="text-box">
+                      <div class="image-box">
+                          <img src="images/tour-img3.jpg" alt="" / class="img-fluid">
+                      </div>
+                     
+                     <div class="text-container">
+                      <h5 class="card-title">NEXT2 Pub</h5>
+                      <p class="card-text">Main Features Fee parking...</p>
+                      <ul class="list-group list-group-flush">
+                    
+      
+                        <li class="list-group-item">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                          77/1 Ratchadamnoem Avenue</li>
+         
+                        <li class="list-group-item">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+         
+                          +1(009)433 165</li>
+                          
+                        <li class="list-group-item">
+                          <i class="fa fa-star-o" aria-hidden="true"><br></i>
+         
+                     
+                        Rating 5.0 </li>
+                        <li class="list-group-item">
+                      </li></ul>
+                        
+                      </div> 
+                  </div>
+              </div>
+          </a>
+      </div>
+      <div class="col-md-6">
+        <a href="">
+            <div class="card-flyer">
+                <div class="text-box">
+                    <div class="image-box">
+                        <img src="images/tour-img4.jpg" alt="" / class="img-fluid">
+                    </div>
+                   
+                   <div class="text-container">
+                    <h5 class="card-title">NEXT2 Pub</h5>
+                    <p class="card-text">Main Features Fee parking...</p>
+                    <ul class="list-group list-group-flush">
+                  
+    
+                      <li class="list-group-item">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                        77/1 Ratchadamnoem Avenue</li>
+       
+                      <li class="list-group-item">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+       
+                        +1(009)433 165</li>
+                        
+                      <li class="list-group-item">
+                        <i class="fa fa-star-o" aria-hidden="true"><br></i>
+       
+                   
+                      Rating 5.0 </li>
+                      <li class="list-group-item">
+                    </li></ul>
+                      
+                    </div> 
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 mx-auto">
+      <a href="">
+          <div class="card-flyer">
+              <div class="text-box">
+                  <div class="image-box">
+                      <img src="images/tour img5.png" alt="" / class="img-fluid">
+                  </div>
+                 
+                 <div class="text-container">
+                  <h5 class="card-title">NEXT2 Pub</h5>
+                  <p class="card-text">Main Features Fee parking...</p>
+                  <ul class="list-group list-group-flush">
+                
+  
+                    <li class="list-group-item">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                      77/1 Ratchadamnoem Avenue</li>
+     
+                    <li class="list-group-item">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+     
+                      +1(009)433 165</li>
+                      
+                    <li class="list-group-item">
+                      <i class="fa fa-star-o" aria-hidden="true"><br></i>
+     
+                 
+                    Rating 5.0 </li>
+                    <li class="list-group-item">
+                  </li></ul>
+                    
+                  </div> 
+              </div>
+          </div>
+      </a>
+  </div>
+
+
+
+</div>
+</div>
+                       
+           
+               
+
+                   
+               
+                </div>
+              </div>
+ 
+                <div class="col-md-5 p-0 m-0 iframe">
+                
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28505.266342084946!2d83.87274254207485!3d26.73932429941865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993eb59b3db7fe7%3A0x8a701fe2e440ee7b!2sKushinagar%20City%20of%20Lord%20Buddha%20Parinirvan!5e0!3m2!1sen!2sin!4v1637842379950!5m2!1sen!2sin"
+              width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+
+                </div>
+
+         
+          </div>
+        </div>
+   
+    <!-- <div class="container-fluid m-0 p-0">
+      <div class="row">
+        <div class="col-md-12 m-0 p-0">
+          <div class="col-md-8">8
+            <P> Showing results For<strong> ”Bangkok Listings"</strong></P> 
+            <border id="rcorners">
+              <p class="" style="font-size: small; margin-left:-33%;"> I am looking for a ...</p>
+              <i class="fa fa-search text-danger" aria-hidden="true" style=" float: right; margin-top:-17%;"></i>
+             </border>
+          </div>
+           <div class="col-md-4">4</div>
+            
+
+        
+        </div>
+      </div>
+    </div>  
+       
+       
+  -->
+    <!--start  Footer -->
+<footer class="footer pt-5" class="footer_content">
+
+
+  <div class="container footer text-md-left" class="footer_content">
+
+
+    <div class="row">
+
+
+      <div class="col-md-3 mx-auto pb-5" class="footer_content">
+        <img src="images/logo.png" class="w-91" height="50"  style="margin-left:-5%;" class="img-fluid">
+    
+        <p class="footer_content">Elusmod tempora incididunt dolore magna aliqua sed enim Lorem ipsum dolor, sit amet consectetur .
+        </p>
+       
+        <span>
+         <strong> Email:</strong>support@domain.com<br>
+        </span>
+     
+        <strong>Phone:</strong> +(123)456 74700
+   
+  
+      </div>
+    
+
+      
+
+   
+      <div class="col-md-3 footer mt-3 footer_center">
+        <div class="row">
+
+ 
+        <h6 class="font-weight-bold">Our Company</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Careers</a>
+          </li>
+          <li>
+            <a href="#!">Support</a>
+          </li>
+          <li>
+            <a href="#!">How it Works</a>
+          </li>
+          <li>
+            <a href="#!">Add A Place</a>
+          </li>
+          <li>
+            <a href="#!">Disclaimers</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+ 
+
+ 
+
+  
+      <div class="col-md-3 mt-3">
+        <div class="row">
+   
+        <h6 class="font-weight-bold text-uppercase">Network</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Paris</a>
+          </li>
+          <li>
+            <a href="#!">London</a>
+          </li>
+          <li>
+            <a href="#!">Singapore</a>
+          </li>
+          <li>
+            <a href="#!">Bangkok</a>
+          </li>
+          <li>
+            <a href="#!">Dubai</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+
+
+      <div class="col-md-3">
+        
+     
+        <p class="mt-3 mb-0">Continue explaring the great places.</p>
+       
+
+       <div class="google-play-icon">
+        <a href="index.html">
+          <img width="190" height="auto" src="images/appstore.png">
+        </div>
+          <img width="190" height="auto" src="images/playstore.png">
+        
+      </a>
+    </div>
+
+      </div>
+    </div>
+  </div>
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+      
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+   
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+    
+      </a>
+    </li>
+  </ul>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-5 py-5">
+         <div class="row">
+          <h4 class="text-dark"><strong>Signup For Latest News</h4></strong>
+          <border id="rcorners_footer">
+          
+
+            <p class="text-dark"> Enter your Email ...</p>
+          </border>
+      
+          <border id="rcorners_footer2" class="text-light font-weight-bold"><p class="text-uppercase">Subscribe</p> 
+          </border>
+         </div>
+       </div>
+       <div class="col-md-6 py-5 m-o p-0 footer_connect_socially">
+        <div class="row">
+         <h4 class="text-dark"><strong>Connect Socially</h4></strong>
+         <ul class="border_socialicondf"> 
+           
+       <a href ="https://www.facebook.com/">
+         <i class="fa fa-facebook fa-lg border_socialicon1"><span id="Socially1">Facebook</i></span></a>
+       <a href="https://twitter.com/"><i class="fa fa-twitter fa-lg border_socialicon2"><span id="Socially2">Twitter</i></a></span>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin fa-lg border_socialicon3"><span id="Socially3">Linkedin</i></span></a>
+        <a href="https://www.behance.net/"><i class="fa fa-behance fa-lg border_socialicon4"><span id="Socially4">Behance</i></span></a>    
+
+        
+
+       
+
+
+        </ul>
+
+        </div>
+  
+      </div>
+  
+   <hr>
+     </div>
+    
+   </div>
+   <div class="footer-copyright text-center py-3"><span>©2021 Copyright:</span>
+    <a href="index.html">All rights reserved. </a>
+  </div>
+</footer>
+
+    
+    </body>
+</html>
